@@ -89,3 +89,9 @@ div[class*="i1"] {
 .overview {
   margin: 0rem 2rem;
 }
+
+/* colors and text styles */
+
+.totalfoll {
+  font-size: 2.5rem;
+}
