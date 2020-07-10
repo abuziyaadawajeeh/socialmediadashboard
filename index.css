@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+}
+body {
+  --Lime_Green: hsl(163, 72%, 41%);
+  --Bright_Red: hsl(356, 69%, 56%);
+
+  --Facebook: hsl(208, 92%, 53%);
+  --Twitter: hsl(203, 89%, 53%);
+  --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --YouTube: hsl(348, 97%, 39%);
+
+  /* dark theme */
+
+  --Very_Dark_Blue: hsl(230, 17%, 14%);
+  --Very_Dark_Blue: hsl(232, 19%, 15%);
+  --Dark_Desaturated_Blue: hsl(228, 28%, 20%);
+  --Desaturated_Blue: hsl(228, 34%, 66%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.headwrapper {
+  display: flex;
+  justify-content: space-between;
+}
+header > div {
+  margin: 0 2rem;
+}
+[class*="site-"] {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  border: 1px solid red;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.one {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1rem;
+  margin: 0 2rem;
+}
+
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem 1rem;
+  margin: 0 2rem;
+  height: 17rem;
+  border: 1px solid red;
+}
+
+[class*="info"] {
+  position: relative;
+  border: 1px solid red;
+}
+div[class*="i2"] {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+div[class*="i3"] {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+div[class*="i4"] {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+div[class*="i1"] {
+  display: inline-block;
+}
+.overview {
+  margin: 0rem 2rem;
+}
