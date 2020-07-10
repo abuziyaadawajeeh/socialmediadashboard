@@ -65,22 +65,26 @@ header > div {
 div[class*="i2"] {
   display: inline-block;
   position: absolute;
-  right: 0;
+  right: 1rem;
+  top: 1rem;
 }
 div[class*="i3"] {
   display: inline-block;
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 1rem;
+  bottom: 1rem;
 }
 div[class*="i4"] {
   display: inline-block;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 1rem;
+  bottom: 1rem;
 }
 div[class*="i1"] {
   display: inline-block;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
 .overview {
   margin: 0rem 2rem;
