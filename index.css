@@ -111,7 +111,7 @@ img {
   }
   body {
     height: 200vh;
-    max-height: 1220px;
+    /* max-height: 1220px; */
   }
 }
 @media screen and (max-width: 660px) {
@@ -128,6 +128,6 @@ img {
   }
   body {
     height: 380vh;
-    max-height: 2318px;
+    /* max-height: 2318px; */
   }
 }
