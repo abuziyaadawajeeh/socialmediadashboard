@@ -12,7 +12,22 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="index.css" />
+    <script>
+      function switchmode() {
+        var state = document.getElementById("switch").innerText;
+        if (state == "Light Mode") {
+          document
+            .getElementById("stylelink")
+            .setAttribute("href", "index1.css");
+          document.getElementById("switch").innerText = "Dark Mode";
+        } else {
+          document
+            .getElementById("stylelink")
+            .setAttribute("href", "index.css");
+          document.getElementById("switch").innerText = "Light Mode";
+        }
+      }
+    </script>
 
     <title>Frontend Mentor | Social Media Dashboard Challenge</title>
 
@@ -31,7 +46,9 @@
     <header>
       <div class="headwrapper">
         <div>Social Media Dashboard</div>
-        <div>Dark Mode</div>
+        <button id="switch" style="display: block;" onclick="switchmode()">
+          Light Mode
+        </button>
       </div>
 
       <div>Total Followers: 23,004</div>
@@ -209,7 +226,13 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Abu Ziyaada Wajeeh</a>.
+      >. Coded by
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/abu-ziyaada-wajeeh-at-taariq-807986141/"
+        >Abu Ziyaada Wajeeh</a
+      >.
     </div>
   </body>
+  <link id="stylelink" rel="stylesheet" href="index.css" />
 </html>

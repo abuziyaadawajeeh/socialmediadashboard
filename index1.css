@@ -1,7 +1,7 @@
 * {
   margin: 0;
-  background-color: var(--Very_Dark_Blue1);
-  color: rgb(196, 196, 196);
+  background-color: rgb(216, 216, 216);
+  color: var(--Very_Dark_Blue);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -56,7 +56,7 @@ header > div {
 .one img,
 .two div,
 .two img {
-  background-color: var(--Dark_Desaturated_Blue);
+  background-color: rgb(202, 202, 202);
 }
 
 .one > *:hover div,
@@ -65,7 +65,7 @@ header > div {
 .two > *:hover div,
 .two > *:hover img,
 .two > *:hover {
-  background-color: rgb(53, 53, 90);
+  background-color: rgb(180, 180, 180);
 }
 
 .two {
@@ -166,20 +166,22 @@ img {
 }
 
 a:link {
-  color: rgb(253, 182, 182);
+  color: rgb(179, 0, 0);
   text-decoration: none;
 }
 
 a:visited {
-  color: rgb(150, 84, 150);
+  color: rgb(158, 0, 0);
 }
+
 a:hover {
-  color: green;
+  color: rgb(32, 105, 32);
 }
+
 #switch {
   box-sizing: border-box;
   padding: 0.3rem;
-  background-color: rgb(218, 218, 218);
+  background-color: rgb(12, 0, 39);
   border: 0px solid red;
-  color: rgb(5, 0, 53);
+  color: rgb(190, 190, 190);
 }
