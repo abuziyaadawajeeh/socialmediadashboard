@@ -183,3 +183,6 @@ a:hover {
   border: 0px solid red;
   color: rgb(5, 0, 53);
 }
+#switch:hover {
+  background-color: rgb(155, 155, 155);
+}
