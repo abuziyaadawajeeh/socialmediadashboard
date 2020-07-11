@@ -52,6 +52,10 @@ header > div {
   grid-gap: 1rem;
   margin: 0 10vw;
 }
+.one > *,
+.two > * {
+  box-shadow: 1px 1px 8px 1px rgb(145, 145, 145);
+}
 .one div,
 .one img,
 .two div,
@@ -184,6 +188,7 @@ a:hover {
   background-color: rgb(12, 0, 39);
   border: 0px solid red;
   color: rgb(190, 190, 190);
+  box-shadow: 1px 1px 8px 2px rgb(46, 46, 46);
 }
 #switch:hover {
   background-color: rgb(119, 119, 119);
