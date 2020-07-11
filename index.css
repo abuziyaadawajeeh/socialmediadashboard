@@ -1,5 +1,8 @@
 * {
   margin: 0;
+  background-color: var(--Very_Dark_Blue1);
+  color: rgb(196, 196, 196);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
   --Lime_Green: hsl(163, 72%, 41%);
@@ -7,13 +10,13 @@ body {
 
   --Facebook: hsl(208, 92%, 53%);
   --Twitter: hsl(203, 89%, 53%);
-  --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   --YouTube: hsl(348, 97%, 39%);
 
   /* dark theme */
 
   --Very_Dark_Blue: hsl(230, 17%, 14%);
-  --Very_Dark_Blue: hsl(232, 19%, 15%);
+  --Very_Dark_Blue1: hsl(232, 19%, 15%);
   --Dark_Desaturated_Blue: hsl(228, 28%, 20%);
   --Desaturated_Blue: hsl(228, 34%, 66%);
   --White: hsl(0, 0%, 100%);
@@ -24,12 +27,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  position: relative;
 }
 
 .headwrapper {
   display: flex;
   justify-content: space-between;
 }
+
 header > div {
   margin: 0 10vw;
 }
@@ -37,7 +42,6 @@ header > div {
   display: flex;
   flex-direction: column;
   height: 200px;
-  border: 1px solid red;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -47,6 +51,21 @@ header > div {
   grid-gap: 1rem;
   margin: 0 10vw;
 }
+.one div {
+  background-color: var(--Dark_Desaturated_Blue);
+}
+.two div {
+  background-color: var(--Dark_Desaturated_Blue);
+}
+
+.one > *:hover div,
+.one > *:hover img,
+.one > *:hover,
+.two > *:hover div,
+.two > *:hover img,
+.two > *:hover {
+  background-color: rgb(53, 53, 90);
+}
 
 .two {
   display: grid;
@@ -55,12 +74,10 @@ header > div {
   grid-gap: 1rem 1rem;
   margin: 0 10vw;
   height: 17rem;
-  border: 1px solid red;
 }
 
 [class*="info"] {
   position: relative;
-  border: 1px solid red;
 }
 div[class*="i2"] {
   display: inline-block;
@@ -99,6 +116,19 @@ img {
   vertical-align: middle;
 }
 
+.site-1 {
+  border-top: 2px solid rgb(50, 96, 182);
+}
+.site-2 {
+  border-top: 2px solid rgb(0, 183, 255);
+}
+.site-3 {
+  border-top: 2px solid rgb(255, 174, 0);
+}
+.site-4 {
+  border-top: 2px solid rgb(146, 5, 5);
+}
+
 /* media queries */
 @media screen and (max-width: 936px) {
   .one {
@@ -132,4 +162,13 @@ img {
     max-height: 2318px;
     min-height: 2318px;
   }
+}
+
+a:link {
+  color: rgb(253, 182, 182);
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
 }
